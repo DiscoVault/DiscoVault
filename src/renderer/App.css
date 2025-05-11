@@ -126,6 +126,7 @@
 
   /* Accessibility */
   --focus-ring: 0 0 0 2px var(--color-background-primary), 0 0 0 4px var(--color-brand-primary);
+  --svg-normal: var(--color-text-primary);
 
   /* Media Queries */
   --breakpoint-sm: 640px;
@@ -135,16 +136,32 @@
   --breakpoint-2xl: 1536px;
 }
 
+.Sidebar
+{
+  width: 45px;
+  height: 100vh;
+  justify-items: center;
+  background-color: var(--color-background-primary);
+}
+
+.svg-button
+{
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Madimi One", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: var(--color-background-tertiary);
+  color: var(--color-text-primary);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  monospace;
 }

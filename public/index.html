@@ -1,43 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/assets/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/assets/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<head>
+    <meta charset="utf-8"/>
+    <link rel="icon" href="%PUBLIC_URL%/src/assets/favicon.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <!-- Primary Meta Tags -->
+    <title>DiscoVault</title>
+    <meta name="title" content="DiscoVault - Manage your Discord client mods with ease"/>
+    <meta name="description"
+          content="The ultimate Discord client mod manager. Easily install, configure, and switch between your favorite Discord mods, themes, and plugins."/>
+    <meta name="author" content="DiscoVault"/>
+    <meta name="application-name" content="DiscoVault"/>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <!-- Theme Colors -->
+    <meta name="theme-color" content="#1e1e1e"/>
+    <meta name="msapplication-TileColor" content="#1e1e1e"/>
+    <meta name="msapplication-navbutton-color" content="#1e1e1e"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://discovault.app/"/>
+    <meta property="og:title" content="DiscoVault - Manage your Discord client mods with ease"/>
+    <meta property="og:description"
+          content="The ultimate Discord client mod manager. Easily install, configure, and switch between your favorite Discord mods, themes, and plugins."/>
+    <meta property="og:image" content="%PUBLIC_URL%/assets/og-image.png"/>
+    <meta property="og:site_name" content="DiscoVault"/>
+    <meta property="og:locale" content="en_US"/>
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image"/>
+    <meta property="twitter:url" content="https://discovault.app/"/>
+    <meta property="twitter:title" content="DiscoVault - Manage your Discord client mods with ease"/>
+    <meta property="twitter:description"
+          content="The ultimate Discord client mod manager. Easily install, configure, and switch between your favorite Discord mods, themes, and plugins."/>
+    <meta property="twitter:image" content="%PUBLIC_URL%/assets/twitter-image.png"/>
+    <meta property="twitter:creator" content="@DiscoVaultApp"/>
+
+    <!-- Microsoft Tiles -->
+    <meta name="msapplication-config" content="%PUBLIC_URL%/browserconfig.xml"/>
+    <meta name="msapplication-square70x70logo" content="%PUBLIC_URL%/assets/ms-icon-70x70.png"/>
+    <meta name="msapplication-square150x150logo" content="%PUBLIC_URL%/assets/ms-icon-150x150.png"/>
+    <meta name="msapplication-wide310x150logo" content="%PUBLIC_URL%/assets/ms-icon-310x150.png"/>
+    <meta name="msapplication-square310x310logo" content="%PUBLIC_URL%/assets/ms-icon-310x310.png"/>
+
+    <!-- App manifest -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json"/>
+
+    <!-- Preconnect to resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+
+    <!-- Optional: Font Loading -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+
+    <!-- Application Styles -->
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/variables.css"/>
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/normalize.css"/>
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/main.css"/>
+</head>
+<body>
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<div id="root"></div>
+<!--
+  This HTML file is a template.
+  If you open it directly in the browser, you will see an empty page.
+
+  You can add webfonts, meta tags, or analytics to this file.
+  The build step will place the bundled scripts into the <body> tag.
+
+  To begin the development, run `npm start` or `yarn start`.
+  To create a production bundle, use `npm run build` or `yarn build`.
+-->
+</body>
 </html>
