@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import {SelectSVG} from "@components/svgs";
+import {Button} from 'antd'
 
 function App() {
     return (
