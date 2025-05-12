@@ -1,3 +1,4 @@
+
 :root {
   /* Color System */
   --color-background-primary: #1e1e1e;
@@ -136,20 +137,15 @@
   --breakpoint-2xl: 1536px;
 }
 
-.Sidebar
-{
-  width: 45px;
-  height: 100vh;
-  justify-items: center;
-  background-color: var(--color-background-primary);
-}
-
-.svg-button
-{
+.svg-button {
   padding: 10px;
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+
+.help-button {
+   /*todo: Align this bitch to the bottom later.*/
 }
 
 body {
@@ -164,4 +160,84 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
   monospace;
+}
+
+
+.App-container {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+}
+
+.Topbar {
+  display: flex;
+  flex-direction: column;
+  order: 2;
+  height: fit-content;
+  width: 100%;
+  background: var(--color-background-primary);
+}
+
+.Appname {
+  font-family: "Madimi One", sans-serif;
+  font-size: 24px;
+  margin: 0;
+  background: var(--gradient-brand);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}
+
+.Sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 100vh;
+  justify-items: center;
+  background-color: var(--color-background-primary);
+}
+
+.AppLogo {
+  width: fit-content;
+  font-family: "Madimi One", sans-serif;
+  margin: 5px;
+}
+
+
+
+.Modcard-container {
+  display: flex;
+  flex-direction: row;
+  order: 3;
+  margin: var(--space-xl);
+}
+.Modcard-body {
+  background: var(--color-background-float);
+  width: 500px;
+  height: 300px;
+  border-radius: var(--radius-lg);
+}
+.Modcard-header {
+  padding: var(--space-md);
+  font-size: var(--font-size-4xl);
+  align-items: center;
+  /*justify-content: center;*/
+  margin: var(--space-xl);
+  display: flex;
+}
+.Mod-Title {
+  padding: 0 var(--space-sm) ;
+}
+.Mod-Version {
+  font-size: var(--font-size-md);
+  align-items: end;
+}
+.Mod-Toggle {
+  justify-content: right;
+}
+.Modcard-content {
+  padding: var(--space-md);
 }
